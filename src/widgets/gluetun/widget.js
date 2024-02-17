@@ -7,7 +7,7 @@ const widget = {
   mappings: {
     ip: {
       endpoint: "publicip/ip",
-      validate: ["public_ip", "region", "city"],
+      validate: ["public_ip", "region", "country"],
     },
     port: {
       endpoint: "openvpn/portforwarded",
