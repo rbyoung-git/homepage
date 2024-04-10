@@ -39,6 +39,11 @@ Once installed, hooks will run when you commit. If the formatting isn't quite ri
 
 See the [pre-commit documentation](https://pre-commit.com/#install) to get started.
 
+## Preferring self-hosted open-source software
+
+In general, homepage is meant to be a dashboard for 'self-hosted' services and we believe it is a small way we can help showcase this kind of software. While exceptions are made, mostly when there is no viable
+self-hosted / open-source alternative, we ask that any widgets, etc. are developed primarily for a self-hosted tool.
+
 ## New Feature Guidelines
 
 - New features should be linked to an existing feature request with at least 10 'up-votes'. The purpose of this requirement is to avoid the addition (and maintenance) of features that might only benefit a small number of users.
@@ -51,6 +56,7 @@ To ensure cohesiveness of various widgets, the following should be used as a gui
 
 - Please only submit widgets that have been requested and have at least 10 'up-votes'. The purpose of this requirement is to avoid the addition (and maintenance) of service widgets that might only benefit a small number of users.
 - Widgets should be only one row of blocks
-- Widgets should be no more than 4 blocks wide
+- Widgets should be no more than 4 blocks wide and generally conform to the styling / design choices of other widgets
 - Minimize the number of API calls
 - Avoid the use of custom proxy unless absolutely necessary
+- Widgets should be 'read-only', as in they should not make write changes using the relevant tool's API. Homepage widgets are designed to surface information, not to be a (usually worse) replacement for the tool itself.
